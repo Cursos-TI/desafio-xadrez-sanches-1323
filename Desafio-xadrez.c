@@ -3,7 +3,7 @@
 int main(){
 
     int bispo = 1 ;
-    int  rainha , torre;
+    int  rainha , torre, cavalo;
    
 
 
@@ -31,24 +31,37 @@ int main(){
             
             bispo++;
         } while (bispo <= 5);
-        printf("A Bispo moveu-se 5 casa na diagoal..\n");
+        printf("O Bispo moveu-se 5 casa na diagoal..\n");
         printf("finalizando movimento do Bispo ....\n");
             printf("\n");
             
 
 
 
-            printf("--Rainha--\n");
-            for(rainha = 0;rainha <= 7;rainha++)
-            {
-                printf("esquerda\n");
-            }       
-            printf("A Rainha moveu-se 8 casa para esquerda..\n");
-            printf("finalizando movimento da rainha....\n");
-           
+        printf("--Rainha--\n");
+        for(rainha = 0;rainha <= 7;rainha++)
+        {
+            printf("esquerda\n");
+        }       
+        printf("A Rainha moveu-se 8 casa para esquerda..\n");
+        printf("finalizando movimento da rainha....\n");
+        printf("\n");
     
 
+        printf("--cavalo--\n");
+        while (cavalo <= 1)
+        { 
 
+            for (cavalo = 1; cavalo <= 2; cavalo++)
+            {
+                printf("cima\n");
+            }
+                printf("esquerda\n");  
+          cavalo++;  
+        }
+        printf("O cavalo moveu-se duas casa para cima e uma casa para esquerda...\n");
+        printf("finalizando movimento do cavalo....\n");
+    
 
         
     return 0;
